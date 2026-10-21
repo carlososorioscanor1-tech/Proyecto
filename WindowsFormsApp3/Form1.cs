@@ -36,5 +36,56 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            // 1. Definir los límites y el radio de redondeado
+            Rectangle bounds = new Rectangle(0, 0, panel2.Width, panel2.Height);
+            int cornerRadius = 25; // Sube este número si quieres que las esquinas sean más redondas
+
+            System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.AddArc(bounds.X, bounds.Y, cornerRadius, cornerRadius, 180, 90);
+            path.AddArc(bounds.X + bounds.Width - cornerRadius, bounds.Y, cornerRadius, cornerRadius, 270, 90);
+            path.AddArc(bounds.X + bounds.Width - cornerRadius, bounds.Y + bounds.Height - cornerRadius, cornerRadius, cornerRadius, 0, 90);
+            path.AddArc(bounds.X, bounds.Y + bounds.Height - cornerRadius, cornerRadius, cornerRadius, 90, 90);
+            path.CloseAllFigures();
+
+            // 2. Recortar el panel con la forma redondeada
+            panel2.Region = new Region(path);
+
+            // 3. Dibujar la línea de contorno (Borde) para que resalte
+            using (Pen pen = new Pen(Color.FromArgb(100, 150, 240), 2)) // Color azul claro brillante y grosor de 2 píxeles
+            {
+                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                e.Graphics.DrawPath(pen, path);
+            }
+
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
