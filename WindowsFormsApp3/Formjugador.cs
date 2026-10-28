@@ -16,5 +16,10 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
+
+        private void guna2GroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
