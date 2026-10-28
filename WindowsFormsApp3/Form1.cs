@@ -87,5 +87,14 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            // Crear una nueva instancia del formulario de Historial
+            FrmHistorial formularioHistorial = new FrmHistorial();
+
+            // Mostrar el formulario en pantalla
+            formularioHistorial.Show();
+        }
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formjugador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formjugador.Designer.cs">
+      <DependentUpon>Formjugador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formjugador.resx">
+      <DependentUpon>Formjugador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHistorial.resx">
       <DependentUpon>FrmHistorial.cs</DependentUpon>
