@@ -46,5 +46,15 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void guna2DataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnExportarCSV_Guna_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
